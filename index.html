@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced To-Do List</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>My To-Do List</h1>
+      <p>Organize your tasks with ease!</p>
+    </div>
+    <div class="container">
+      <div id="wrapper">
+        <input type="text" placeholder="Enter your task..." id="task-input" />
+        <button id="add-btn">Add Task</button>
+        <button id="clear-btn">Clear All</button>
+      </div>
+      <div id="tasks">
+        <p id="pending-tasks">
+          You have <span class="count-value">0</span> task(s) remaining.
+        </p>
+      </div>
+    </div>
+    <p id="error">Input cannot be empty!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
